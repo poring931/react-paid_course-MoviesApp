@@ -12,9 +12,12 @@ export default class Movie extends Component {
         let keys = Object.keys(this.state.data)
 
         if (!this.state.data[keys[0]]){
-             fetch(`http://www.omdbapi.com/?apikey=df855818&plot=short&i=${this.props.imdbID}`)
+             fetch(`https://www.omdbapi.com/?apikey=df855818&plot=short&i=${this.props.imdbID}`)
             .then(response => response.json())
             .then(data =>this.setState({data: data}))
+            .catch(err => {
+                console.log(err)
+            })
             this.forceUpdate()
         }
     }
