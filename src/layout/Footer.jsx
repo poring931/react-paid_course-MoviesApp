@@ -7,7 +7,7 @@ export const Footer = () => {
           <div className="footer-copyright">
             <div className="container">
             © {new Date().getFullYear()} Copyright Text
-            <a className="grey-text text-lighten-4 right" href="#!">repo</a>
+            <a className="grey-text text-lighten-4 right" target="_blank" href="https://github.com/poring931/react-paid_course-MoviesApp">Ссылка на репозиторий</a>
             </div>
           </div>
         </footer>
